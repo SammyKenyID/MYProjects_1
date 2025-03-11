@@ -1,1 +1,1 @@
-In the Projects Folder, you will find sub-folders containing different projects
+Locate the Java code for the LoanCalculator in the src directory
