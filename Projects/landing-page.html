@@ -13,105 +13,213 @@
         <link rel="stylesheet" href="landing-page.css">
 	</head>
 	
-	<body>
-		<header id="main-header">
-			<div class="container">
-				<a href=""><img src="landing-page/logo.svg" alt="logo" id="logo"></a>
-				<h1>Modern Chairs Crafted with Skill</h1>
-				<h2>Your No.1 shopping point for all your chairs</h2>
-				<a href="#chair-page" class="btn">Discover our chair selection</a>
-			</div>
-		</header>
+<body>
+  <header class="site-header" id="home">
+    <nav class="navbar">
+      <div class="container navbar-inner">
+        <a href="#home" class="logo-link">
+          <img src="landing-page/logo.svg" alt="KenyDesigns Logo" class="logo">
+        </a>
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#products" class="nav-link">Products</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#store" class="nav-link">Visit Us</a></li>
+        </ul>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+        </button>
+      </div>
+    </nav>
+    
+    <div class="container">
+      <div class="hero-content">
+        <h1>Modern Chairs Crafted with Skill</h1>
+        <h2>Your premium destination for the best handcrafted furniture</h2>
+        <a href="#products" class="btn">Discover Our Collection</a>
+      </div>
+    </div>
+  </header>
 
-		<section id="chair-page">
-			<div class="container">
-				<header>
-					<p class="section-intro">The Selection</p>
-					<h3>Our Chairs</h3>
-					<p>We mostly sell one-off items. That means that we make one-of-a-kind furniture pieces so whoever buys it will have a unique item.</p>
-				</header>
-				
-				<div class="gallery">
-					<div class="box">
-						<img src="landing-page/furniture-1.jpg" alt="furniture-1" id="f1">
-						<p class="number">01</p>
-						<h4>Tufted white leather sofa chair</h4>
-						<p class="description">This will fit perfectly in any beauty dalon or modern home thanks to its timeless design.</p>
-						<p class="price">GHS2499.99</p>
-					</div>
-					<div class="box">
-						<img src="landing-page/furniture-2.jpg" alt="furniture-2" id="f2">
-						<p class="number">02</p>
-						<h4>Black and brown wooden chair</h4>
-						<p class="description">Both minimalistic and comfortable, this is a great choice for home or office.</p>
-						<p class="price">GHS999.99</p>
-					</div>
-					<div class="box">
-						<img src="landing-page/furniture-3.jpg" alt="furniture-3" id="f3">
-						<p class="number">03</p>
-						<h4>Rustic wooden bar stand</h4>
-						<p class="description">Made from solid beech wood, this piece will fit perfectly in your rustic kitchen.</p>
-						<p class="price">GHS599.99</p>
-					</div>
-				</div>
+  <main>
+    <section id="products" class="products-section">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-intro">The Selection</p>
+          <h2>Our Signature Pieces</h2>
+          <p class="section-description">
+            We specialize in one-of-a-kind furniture pieces. Each item is meticulously crafted to ensure that whoever purchases it will own a truly unique piece that tells its own story.
+          </p>
+        </header>
+        
+        <div class="product-grid">
+          <article class="product-card">
+            <span class="product-number">01</span>
+            <img src="landing-page/furniture-1.jpg" alt="Tufted white leather sofa chair" class="product-image">
+            <div class="product-content">
+              <h3>Tufted White Leather Sofa Chair</h3>
+              <p>This timeless design will complement any beauty salon or modern home interior with its elegant profile and premium upholstery.</p>
+              <p class="product-price">GHS 2,499.99</p>
+              <a href="#contact" class="btn">Inquire Now</a>
+            </div>
+          </article>
+          
+          <article class="product-card">
+            <span class="product-number">02</span>
+            <img src="landing-page/furniture-2.jpg" alt="Black and brown wooden chair" class="product-image">
+            <div class="product-content">
+              <h3>Black & Brown Wooden Chair</h3>
+              <p>Striking the perfect balance between minimalist design and exceptional comfort, this versatile piece is ideal for both home and office environments.</p>
+              <p class="product-price">GHS 999.99</p>
+              <a href="#contact" class="btn">Inquire Now</a>
+            </div>
+          </article>
+          
+          <article class="product-card">
+            <span class="product-number">03</span>
+            <img src="landing-page/furniture-3.jpg" alt="Rustic wooden bar stand" class="product-image">
+            <div class="product-content">
+              <h3>Rustic Wooden Bar Stand</h3>
+              <p>Crafted from solid beech wood, this authentic piece brings warmth and character to any rustic kitchen or dining space.</p>
+              <p class="product-price">GHS 599.99</p>
+              <a href="#contact" class="btn">Inquire Now</a>
+            </div>
+          </article>
+        </div>
+        
+        <div class="cta-container" style="text-align: center; margin-top: var(--spacing-lg);">
+          <p>Interested in our craftsmanship? <a href="#contact">Send us a message</a> or <a href="#store">visit our showroom</a>.</p>
+        </div>
+      </div>
+    </section>
 
-				<p>Interested in our products? <a href="#contact">Send us a message</a> or <a href="#store">visit our store</a>.</p>
-			
-			</div>
-		</section>
+    <section id="contact" class="contact-section">
+      <div class="container container-narrow">
+        <header class="section-header">
+          <p class="section-intro">Contact Us</p>
+          <h2>Let's Discuss Your Vision</h2>
+          <p class="section-description">
+            Whether you're looking for a specific piece or interested in a custom design, we're here to help bring your ideas to life.
+          </p>
+        </header>
 
-		<section id="contact" class="dark">
-			<div class="container small">
-				<header>
-					<p class="section-intro">Contact Us</p>
-					<h3>Let's get in touch</h3>
-				</header>
+        <form action="" method="post" class="contact-form">
+          <div class="form-group">
+            <label for="contact-name">Full Name</label>
+            <input type="text" name="contact-name" id="contact-name" required aria-required="true">
+          </div>
+          
+          <div class="form-group">
+            <label for="contact-email">Email Address</label>
+            <input type="email" name="contact-email" id="contact-email" required aria-required="true">
+          </div>
+          
+          <div class="form-group">
+            <label for="contact-phone">Phone Number</label>
+            <input type="tel" name="contact-phone" id="contact-phone">
+          </div>
+          
+          <div class="form-group">
+            <label for="contact-message">How Can We Help You?</label>
+            <textarea name="contact-message" id="contact-message" rows="5" required aria-required="true"></textarea>
+          </div>
+          
+          <div class="form-group">
+            <button type="submit" class="btn">Send Message</button>
+            <p class="muted"><em>All fields marked as required must be completed. We'll respond to your inquiry within 24 hours.</em></p>
+          </div>
+        </form>
+      </div>
+    </section>
 
-				<form action="" method="post">
-					<div>
-						<label for="contact-name">Name</label>
-						<input type="text" name="contact-name" id="contact-name">
-					</div>
-					<div>
-						<label for="contact-email">Email Address</label>
-						<input type="email" name="contact-email" id="contact-email">
-					</div>
-					<div>
-						<label for="contact-message">Message</label>
-						<textarea name="contact-message" id="contact-message" cols="30" rows="10"></textarea>
-					</div>
-					<div>
-						<button class="btn">Send message</button>
-						<p class="muted"><em>All fields are required. We'll get back to you as soon as possible.</em></p>
-					</div>
-				</form>
-		</section>
+    <section id="store" class="store-section">
+      <div class="container container-narrow">
+        <p class="section-intro">Visit Our Showroom</p>
+        <h2>Experience Our Craftsmanship In Person</h2>
+        
+        <p class="large-text">
+          <a href="tel:+233500156809">(+233) 500-156-809</a>
+        </p>
+        
+        <address class="large-text">
+          P169 American Man Lane<br>
+          Cantoments-Accra, Ghana
+        </address>
+        
+        <div class="store-hours">
+          <h3>Opening Hours</h3>
+          <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+          <p>Saturday: 10:00 AM - 4:00 PM</p>
+          <p>Sunday: Closed</p>
+        </div>
+        
+        <div class="map-container">
+          <!-- Map placeholder - would be replaced with actual map -->
+          <div style="height: 300px; background-color: #e9e9e9; margin: 2rem 0; display: flex; align-items: center; justify-content: center;">
+            <p>Interactive Map Would Display Here</p>
+          </div>
+        </div>
+        
+        <ul class="social-links">
+          <li>
+            <a href="#" class="social-link" aria-label="Follow us on Twitter">
+              <img src="landing-page/icon-twitter.svg" alt="" class="social-icon">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link" aria-label="Follow us on Facebook">
+              <img src="landing-page/icon-facebook.svg" alt="" class="social-icon">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link" aria-label="Follow us on Instagram">
+              <img src="landing-page/icon-instagram.svg" alt="" class="social-icon">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
-		<section id="store">
-			<div class="container">
-				<p class="section-intro">Visit our store</p>
-				<h3 class="large">(+233) 500-156-809</h3>
-				<p class="large">P169 American Man Ln, Cantoments-Accra</p>
+  <footer class="footer">
+    <div class="container container-narrow">
+      <p>&copy; 2024 KenyDesigns. All rights reserved.</p>
+      <p>Handcrafted with care in Accra, Ghana</p>
+      <p>
+        <small>Built with <a href="#">WordPress</a> and <a href="#">Elementor</a>.</small>
+      </p>
+    </div>
+  </footer>
 
-				<ul class="social-icons">
-					<li>
-						<a href=""><img src="landing-page/icon-twitter.svg" alt="Twitter"></a>
-					</li>
-					<li>
-						<a href=""><img src="landing-page/icon-facebook.svg" alt="Facebook"></a>
-					</li>
-					<li>
-						<a href=""><img src="landing-page/icon-instagram.svg" alt="Instagram"></a>
-					</li>
-				</ul>
-			</div>
-		</section>
+  <script>
+    // Simple navigation toggle for mobile
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuToggle = document.querySelector('.mobile-menu-toggle');
+      const navList = document.querySelector('.nav-list');
+      
+      if (menuToggle) {
+        menuToggle.addEventListener('click', function() {
+          navList.classList.toggle('active');
+          const expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+          menuToggle.setAttribute('aria-expanded', !expanded);
+        });
+      }
+      
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    });
+  </script>
+</body>
 
-		<footer>
-			<div class="container small">
-				<p>&copy; Copyright 2024 The Chair Company. All rights reserved. Built with <a href="">WordPress</a> and <a href="">Elementor</a>.</p>
-			</div>
-		</footer>
-
-	</body>
 </html>
