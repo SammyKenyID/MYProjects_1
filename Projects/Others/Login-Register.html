@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KenySpace</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url(images/mymy/yellow_lanes.png) no-repeat center/cover;
+        }
+
+        .wrapper {
+            position: relative;
+            width: 400px;
+            height: 520px;
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, .5);
+            border-radius: 20px;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .form-box {
+            width: 100%;
+            padding: 40px;
+            position: absolute;
+            transition: transform 0.5s;
+        }
+
+        .register-box {
+            height: 570px;
+            padding: 50px;
+        }
+
+        .form-box h2 {
+            font-size: 2em;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .input-box {
+            position: relative;
+            width: 100%;
+            height: 50px;
+            border-bottom: 2px solid #fff;
+            margin: 25px 0;
+        }
+
+        .input-box label {
+            position: absolute;
+            top: 50%;
+            left: 5px;
+            transform: translateY(-50%);
+            font-size: 1.2em;
+            color: #fff;
+            transition: .3s;
+        }
+
+        .input-box input:focus~label,
+        .input-box input:valid~label {
+            top: -5px;
+        }
+
+        .input-box input {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            font-size: 1.1em;
+            color: #fff;
+            padding: 0 5px;
+        }
+
+        .btn {
+            width: 100%;
+            height: 45px;
+            background: transparent;
+            border: 2px solid #fff;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.2em;
+            color: #a6afea;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: #fff;
+            color: #2c2727;
+        }
+
+        .login-register {
+            margin-top: 25px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .login-register a {
+            color: #a6afea;
+            text-decoration: none;
+        }
+
+        .login-register a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="form-box login-box">
+            <h2>Login</h2>
+            <form>
+                <div class="input-box">
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account? <a href="#" id="showRegister">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register-box" style="transform: translateX(100%);">
+            <h2>Register</h2>
+            <form>
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" required>
+                    <label>Create Password</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" required>
+                    <label>Confirm Password</label>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const loginBox = document.querySelector(".login-box");
+        const registerBox = document.querySelector(".register-box");
+        const showRegister = document.getElementById("showRegister");
+        const showLogin = document.getElementById("showLogin");
+
+        showRegister.addEventListener("click", () => {
+            loginBox.style.transform = "translateX(-100%)";
+            registerBox.style.transform = "translateX(0)";
+        });
+
+        showLogin.addEventListener("click", () => {
+            loginBox.style.transform = "translateX(0)";
+            registerBox.style.transform = "translateX(100%)";
+        });
+    </script>
+</body>
+
+</html>
