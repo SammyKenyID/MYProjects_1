@@ -44,7 +44,7 @@
     }
     
     h1 {
-        margin-top: 2rem;
+      margin-top: 3.5rem;
       font-size: clamp(2.5rem, 5vw, 4rem);
     }
     
@@ -195,22 +195,33 @@
       overflow: hidden;
       transition: var(--transition);
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      display: flex;
+      flex-direction: column;
+      /* Removed justify-content: space-between */
     }
-    
+
     .product-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 8px 24px rgba(0,0,0,0.12);
     }
-    
+
     .product-image {
       aspect-ratio: 1 / 1;
       object-fit: cover;
     }
-    
+
     .product-content {
       padding: var(--spacing-md);
+      display: flex;
+      flex-direction: column;
+      flex: 1; /* makes this area grow to push button down */
     }
-    
+
+    .product-content .btn {
+      margin-top: auto; /* pushes button to the bottom of the content */
+      align-self: start; /* optional: aligns left */
+    }
+
     .product-number {
       position: absolute;
       top: 1rem;
@@ -225,12 +236,13 @@
       border-radius: 50%;
       font-weight: 700;
     }
-    
+
     .product-price {
       font-weight: 700;
       color: var(--accent-color);
       font-size: 1.2rem;
     }
+
     
     /* Contact Section */
     .contact-section {
